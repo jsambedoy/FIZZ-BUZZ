@@ -15,6 +15,29 @@
     font-style: italic;
 }
 
+.notFB {
+    background-color: hsla(0, 0%, 0%, .1);
+}
+
+.Fizz {
+    font-weight: bold;
+    color:rgb(0, 220, 0);
+}
+
+.Buzz {
+    font-weight: bold;
+    color: rgb(0, 155, 255);
+}
+
+.FizzBuzz {
+    color: hsl(271, 100%, 50%);
+    font-weight: bold;
+}
+
+.notFB, .fizz, .buzz, .fizzbuzz {
+    border: solid 10px white;
+}
+
 body {
     color: var(--dark-color);
 }
