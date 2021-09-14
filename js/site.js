@@ -5,6 +5,9 @@ function getValues(){
     let fizzValue = document.getElementById("fizzValue").value;
     let buzzValue = document.getElementById("buzzValue").value;
     
+    let tableBody = document.getElementById("results");
+    tableBody.innerHTML = "";
+    
     //parse into integers
     fizzValue = parseInt(fizzValue);
     buzzValue = parseInt(buzzValue);
@@ -47,14 +50,14 @@ function fizzBuzz(fizzValue, buzzValue){
 //loop over the array and create a tablerow for each item
 function displayData(fbArray) {
 
-    //get the table body element fromt he page
+    //get the table body element fromt the page
     let tableBody = document.getElementById("results");
 
     //get the template row
     let templateRow = document.getElementById("fbTemplate");
 
     //clear table first
-    tableBody.innerHtml = "";
+    tableBody.innerHTML = "";
     
     for (let index = 0; index < fbArray.length; index += 5) {
 
@@ -81,7 +84,4 @@ function displayData(fbArray) {
         tableBody.appendChild(tableRow);
         
     }
-
-    //add all the rows to the table
-
 }
